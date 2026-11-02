@@ -1,0 +1,38 @@
+[
+  {
+    "id": "CASO-01",
+    "titulo": "DM2 descompensada e Infección del Tracto Urinario",
+    "nota": "Paciente masculino de 58 años con antecedentes de HTA y DM2 en tratamiento irregular. Acude a consulta por disuria intensa, polaquiuria y dolor en hipogastrio de 3 días de evolución, acompañado de fiebre de 38.5°C. Niega tos, niega dolor torácico y niega dificultad respiratoria. En examen físico se descarta neumonía. Se diagnostica ITU y se inicia antibioticoterapia oral.",
+    "diagnosticos_esperados": [
+      {"codigo": "N39.0", "descripcion": "Infección del tracto urinario", "estado": "confirmado"},
+      {"codigo": "E11.9", "descripcion": "Diabetes mellitus tipo 2", "estado": "confirmado"},
+      {"codigo": "I10", "descripcion": "Hipertensión esencial (primaria)", "estado": "confirmado"},
+      {"codigo": "R50.9", "descripcion": "Fiebre", "estado": "confirmado"},
+      {"codigo": "J18.9", "descripcion": "Neumonía (descartada)", "estado": "descartado_o_negado"},
+      {"codigo": "R05", "descripcion": "Tos (negada)", "estado": "descartado_o_negado"}
+    ]
+  },
+  {
+    "id": "CASO-02",
+    "titulo": "Dolor precordial con descarte de IAM y crisis hipertensiva",
+    "nota": "Femenina de 62 años acude a urgencias por dolor precordial opresivo tras discusión familiar. Presenta cefalea moderada y PA elevada compatible con crisis hipertensiva. Se realiza ECG seriado y enzimas cardíacas: se descarta IAM. Refiere ardor estomacal compatible con gastritis.",
+    "diagnosticos_esperados": [
+      {"codigo": "I10", "descripcion": "Hipertensión arterial / crisis", "estado": "confirmado"},
+      {"codigo": "R07.4", "descripcion": "Dolor en el pecho", "estado": "confirmado"},
+      {"codigo": "K29.7", "descripcion": "Gastritis", "estado": "confirmado"},
+      {"codigo": "I21.9", "descripcion": "Infarto agudo de miocardio (descartado)", "estado": "descartado_o_negado"}
+    ]
+  },
+  {
+    "id": "CASO-03",
+    "titulo": "Gastroenteritis aguda y antecedente de lumbalgia",
+    "nota": "Paciente acude por cuadro de diarrea líquida y dolor abd tipo cólico de 24 horas. Niega fiebre y niega vómitos. Refiere antecedente de lumbalgia crónica por esfuerzo físico. Se diagnostica EDA de presunto origen infeccioso.",
+    "diagnosticos_esperados": [
+      {"codigo": "A09", "descripcion": "Diarrea y gastroenteritis (EDA)", "estado": "confirmado"},
+      {"codigo": "R10.4", "descripcion": "Dolor abdominal cólico", "estado": "confirmado"},
+      {"codigo": "M54.5", "descripcion": "Lumbago no especificado", "estado": "confirmado"},
+      {"codigo": "R50.9", "descripcion": "Fiebre (negada)", "estado": "descartado_o_negado"},
+      {"codigo": "R11", "descripcion": "Vómitos (negados)", "estado": "descartado_o_negado"}
+    ]
+  }
+]

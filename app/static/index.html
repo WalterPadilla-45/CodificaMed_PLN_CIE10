@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodificaMed — Codificación Automática CIE-10 con PLN</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230f766e'/><path d='M16 6v20M6 16h20' stroke='%23fff' stroke-width='4' stroke-linecap='round'/></svg>">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="barra">
+    <a class="marca" href="#/codificar">
+      <span class="marca-icono" aria-hidden="true">+</span>
+      <div class="marca-info">
+        <span class="marca-nombre">CodificaMed</span>
+        <small class="marca-sub">Codificación CIE-10 de Historias Clínicas · CRISP-ML(Q)</small>
+      </div>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#/codificar" data-ruta="codificar" class="activo">Codificador</a>
+      <a href="#/evaluacion" data-ruta="evaluacion">Evaluación y Métricas</a>
+      <a href="#/catalogo" data-ruta="catalogo">Catálogo CIE-10</a>
+      <a href="#/historial" data-ruta="historial">Historial</a>
+    </nav>
+
+    <div class="herramientas">
+      <div class="switch-modelo" role="radiogroup" aria-label="Proveedor de Modelo">
+        <button type="button" role="radio" data-proveedor="ollama" class="btn-modelo activo" title="Modelo Local (Ollama)">
+          <span class="punto-salud punto-ok"></span>Local
+        </button>
+        <button type="button" role="radio" data-proveedor="claude" class="btn-modelo" title="API Externa (Claude)">
+          <span class="punto-salud"></span>Claude
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="vista-principal" class="contenedor" tabindex="-1"></main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
